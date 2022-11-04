@@ -44,6 +44,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: 0.05em;
   min-width: 170px;
   height: 40px;
   padding: 0.25em 1em;
@@ -58,6 +59,11 @@ a {
 .btn--secondary {
   background-color: var(--color-accent);
   border-color: var(--color-white);
+}
+.btn--sm {
+  color: #ffffff;
+  background: var(--color-accent);
+  border-radius: 30px;
 }
 
 .container {
@@ -136,8 +142,6 @@ a {
   color: var(--color-black);
 }
 
-.main {
-}
 .hero {
   background-color: var(--color-accent);
   background-image: url(../img/Rectangle.png);
@@ -146,6 +150,7 @@ a {
   background-size: contain;
   color: var(--color-white);
   padding: 192px 0;
+  margin-bottom: 80px;
 }
 .hero__content {
   display: flex;
@@ -165,5 +170,29 @@ a {
 .hero__actions {
   display: flex;
 }
-.hero__button {
+
+.offers {
+  margin-bottom: 100px;
+}
+.offers__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.offers__content {
+  display: flex;
+  gap: 30px;
+}
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px;
+  background-color: var(--color-white);
+  flex: 1;
+  gap: var(--gap);
+}
+.offer-item__picture {
+  order: -1;
 }

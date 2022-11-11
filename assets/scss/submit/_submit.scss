@@ -1,0 +1,18 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.submit {
+  margin-bottom: 100px;
+
+  color: $color-white;
+
+  &__content {
+    display: flex;
+
+    gap: $gap;
+
+    @include lg {
+      flex-direction: column;
+    }
+  }
+}

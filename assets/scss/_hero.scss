@@ -1,0 +1,36 @@
+@use "presets" as *;
+
+.hero {
+  margin-bottom: 80px;
+  padding: 192px 0;
+
+  color: $color-white;
+  background-color: $color-accent;
+  background-image: url(../img/Rectangle.png);
+  background-repeat: no-repeat;
+  background-position: 68% 50%;
+  background-size: contain;
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    max-width: 375px;
+
+    gap: $gap-xl;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &__description {
+    margin-bottom: 4px;
+
+    line-height: 1.43;
+  }
+}

@@ -1,0 +1,14 @@
+@use "../presets" as *;
+
+.navbar-info {
+  margin-bottom: 1px;
+  padding: $gap;
+
+  background-color: $color-white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

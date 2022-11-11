@@ -1,0 +1,69 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.offers {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 35px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: $gap-lg;
+  }
+}
+
+.offer-item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+
+  flex-direction: column;
+
+  padding: 25px;
+
+  text-align: center;
+
+  background-color: $color-white;
+
+  gap: $gap;
+
+  @include xl-min {
+    flex-basis: 0;
+  }
+
+  @include xl-md {
+    flex-basis: 40%;
+  }
+
+  @include md {
+    flex-basis: 80%;
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__price {
+    letter-spacing: 0.05em;
+
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  &__picture {
+    order: -1;
+  }
+}

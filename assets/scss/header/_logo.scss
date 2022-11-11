@@ -1,0 +1,20 @@
+@use "../presets" as *;
+
+.logo {
+  &__link {
+    display: flex;
+    align-items: center;
+
+    gap: $gap;
+  }
+
+  &__title {
+    letter-spacing: 0.1em;
+
+    color: $color-accent;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+  }
+}

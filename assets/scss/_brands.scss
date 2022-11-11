@@ -1,0 +1,37 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+.brands {
+  margin-bottom: 80px;
+
+  &__content {
+    display: grid;
+
+    gap: 1px;
+
+    @include xl-min {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include xl-md {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md-xs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include xs {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.brand-item {
+  display: flex;
+  justify-content: center;
+
+  padding: 35px;
+
+  background-color: $color-white;
+}
